@@ -18,7 +18,7 @@ package org.gradle.nativeplatform.test.cpp
 
 abstract class AbstractCppUnitTestComponentWithTestedComponentIntegrationTest extends AbstractCppUnitTestComponentIntegrationTest {
     @Override
-    protected configureTargetMachines(String targetMachines) {
+    protected String configureTargetMachines(String targetMachines) {
         return """
             ${testedComponentDsl} {
                 targetMachines = [${targetMachines}]
