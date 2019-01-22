@@ -1,6 +1,8 @@
 The Gradle team is excited to announce Gradle 5.2.
 
-This release features [1](), [2](), ... [n](), and more.
+This release features the [Java Platform plugin](userguide/java_platform_plugin.html), [official support for additional Windows native toolchains](userguide/native_software.html#native-binaries:tool-chain-support), [service injection into project extensions](userguide/custom_plugins.html#service_injection), and more.
+
+Read the [Gradle 5.x upgrade guide](userguide/upgrading_version_5.html) to learn about breaking changes and considerations for upgrading from Gradle 5.0. If upgrading from Gradle 4.x, please read [upgrading from Gradle 4.x to 5.0](userguide/upgrading_version_4.html) first.
 
 We would like to thank the following community contributors to this release of Gradle:
 
