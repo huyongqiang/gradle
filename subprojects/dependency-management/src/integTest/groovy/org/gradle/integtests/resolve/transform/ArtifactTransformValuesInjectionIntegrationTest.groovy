@@ -96,10 +96,10 @@ project(':b') {
 
 abstract class MakeGreen extends ArtifactTransform {
     @PrimaryInputDependencies
-    abstract ArtifactTransformDependencies getDependencies()
+    abstract Iterable<File> getDependencies()
     
     List<File> transform(File input) {
-        println "received dependencies files \${dependencies.files*.name} for processing \${input.name}"
+        println "received dependencies files \${dependencies*.name} for processing \${input.name}"
         def output = new File(outputDirectory, input.name + ".green")
         output.text = "ok"
         return [output]
